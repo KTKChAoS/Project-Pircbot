@@ -13,3 +13,5 @@ You need to create accounts and get API keys of Twitter, Open Weather Map, Youtu
 This can be easily googled to know how.
 
 Enter those keys in MyBot.java at the places defined after the imports
+
+After running the bot, it can be found in channel #scottbot at https://webchat.freenode.net/

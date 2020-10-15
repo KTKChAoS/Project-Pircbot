@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Project_1-test
+Bundle-SymbolicName: Kartik_Singhal_CS2336_502_Project_1
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: Project 1-test.jar,
+ Kartik Singhal/Desktop/KTK/KartikUSA/Studies/Fall '20/CS 2336.502/Project 1/pircbot-1.5.0/pircbot-1.5.0/pircbot.jar,
+ Kartik Singhal/Desktop/KTK/KartikUSA/Studies/Fall '20/CS 2336.502/Project 1/jar_files/json-simple-1.1.jar,
+ Kartik Singhal/Desktop/KTK/KartikUSA/Studies/Fall '20/CS 2336.502/Project 1/jar_files/json-simple-3.1.1.jar,
+ Kartik Singhal/Desktop/KTK/KartikUSA/Studies/Fall '20/CS 2336.502/Project 1/jar_files/twitter4j-4.0.7/lib/twitter4j-core-4.0.7.jar
+Export-Package: .

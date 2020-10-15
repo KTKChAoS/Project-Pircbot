@@ -39,7 +39,7 @@ public class MyBot extends PircBot {
     private static final String YT_KEY = "<insert your Youtube API key>";
     
     // Twitter keys in order : ConsumerKey, ConsumerSecret, AccessToken, AccessTokenSecret
-    private static final String[] TWITTER_KEYS = {"<Consumer key here>", "<Consumer key secret>","<Access token>","<Access token secret"};
+    private static final String[] TWITTER_KEYS = {"<Consumer key here>", "<Consumer key secret>","<Access token>","<Access token secret>"};
     
     private static final String TIME_KEY = "<insert API key from Amdoren Time API>";
  

@@ -32,18 +32,16 @@ public class MyBot extends PircBot {
     }
     
     // Storing authentication keys and endpoints
-    private static final String OWMkey = ${{secrets.OWM_KEY}};
+	//TODO: set API keys
+    private static final String OWMkey = "<insert your open weather map key here>";
     private static final String WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&";
     private static final String YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&";
-    private static final String YT_KEY = "AIzaSyCTwbZCY5Y6bfAUbkLVScsOTssVKgscsbs";
+    private static final String YT_KEY = "<insert your Youtube API key>";
     
-    // in order : ConsumerKey, ConsumerSecret, AccessToken, AccessTokenSecret
-    private static final String[] TWITTER_KEYS = {"gbUCR8DLRnegSBmQJGIqe4xMX",
-    		"WGJYnyH0qoW7zFjU4DRiJjysPY6gmFaCtDKXpWLDzyZU7yxfKO",
-    		"4034277194-fetHrzqLiEs0VTB58p56Zs8kbEsE9Q9JyU7vql2",
-    		"0dM7UI3jmrH2Ue5A2RKmoLctjRSGakMO9eoNy13ovqgMn"};
+    // Twitter keys in order : ConsumerKey, ConsumerSecret, AccessToken, AccessTokenSecret
+    private static final String[] TWITTER_KEYS = {"<Consumer key here>", "<Consumer key secret>","<Access token>","<Access token secret"};
     
-    private static final String TIME_KEY = "LewtSPCKBk632iNzAgz3AhBYGnVhAi";
+    private static final String TIME_KEY = "<insert API key from Amdoren Time API>";
  
     boolean FLAG = true, FLAG1 = true;
     // A counter to count number of msgs sent by user(s)
@@ -239,7 +237,7 @@ public class MyBot extends PircBot {
 	}
     
     // To get system time
-    // TODO: figure out a way to get time for the user instead of the machine running the bot
+    // TODO: (for me) figure out a way to get time for the user instead of the machine running the bot other than AMDOREN
     void getTime(String channel, String sender) throws Exception {
     	String time = new java.util.Date().toString();
     	sendMessage(channel, sender + ": The time is now: " + time);
@@ -257,10 +255,8 @@ public class MyBot extends PircBot {
     	String time = (String)((JSONObject) obj).get("time");
     	
     	sendMessage(channel, sender + ": The time is now: " + time);
-    	sendMessage(channel, sender + ": The error is now: " + error);
-    	sendMessage(channel, sender + ": The url is now: " + POSTS_API_URL);
-
-
+    	sendMessage(channel, sender + ": Error is now: " + error);
+    	sendMessage(channel, sender + ": URL: " + POSTS_API_URL);
     }
     
     

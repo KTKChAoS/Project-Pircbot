@@ -1,7 +1,7 @@
 /**
  * @author Kartik Singhal
  * NetID: KXS180077
- * UTD-ID: 2021469364
+ * UTD-ID: ---------
  *
  */
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class MyBot extends PircBot {
     }
     
     // Storing authentication keys and endpoints
-    private static final String OWMkey = "0868e7b5a590e110be6fd6ce01da36c1";
+    private static final String OWMkey = ${{secrets.OWM_KEY}};
     private static final String WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&";
     private static final String YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&";
     private static final String YT_KEY = "AIzaSyCTwbZCY5Y6bfAUbkLVScsOTssVKgscsbs";
